@@ -34,6 +34,9 @@
     @media (min-width: $screen-md) {
       flex-direction: row;
     }
+    &__how-to-apply {
+      word-break: break-all;
+    }
   }
 </style>
 
@@ -43,7 +46,7 @@
 
 <div class="detail">
     <Sidenav>
-      <div slot="how_to_apply">
+      <div slot="how_to_apply" class="detail__how-to-apply">
         {@html $isLoading ? '' : job.how_to_apply}
       </div>
     </Sidenav>
